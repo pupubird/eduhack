@@ -213,30 +213,79 @@ h3{
 /* content css ends */
 /* join */
 #join{
-    height:100vh;
+    min-height:100vh;
+    max-height: auto;
     background-color: var(--base-logo);
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: auto;
 }
-#join > h1{
-    margin-top: 4%;
+#form-accordian > h1{
     background-color: var(--base-logo);
-}
-#join > h3{
-    background-color: var(--base-logo);
+    text-align: center;
+    margin-bottom: 10vh;
 }
 #form-accordian{
     width: 80%;
     height: auto;
     margin: auto;
+    background-color: var(--base-logo);
 }
+#form{
+    background-color: var(--base-logo);
+    
+}
+/* form details styling */
+.panel {
+  padding: 0 18px;
+  background-color: var(--base-logo);
+  display: none;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  justify-items: center;
+  margin-bottom: 3vh;
+
+}
+.panel > div{
+    background-color: var(--base-logo);
+    width: 60%;
+    padding: 1vh;
+}
+.panel >div> label{
+    display: block;
+    background-color: var(--base-logo);
+    text-align: left;
+}
+.panel >div> input{
+    display: inline-block;
+    background-color: var(--base-logo);
+    width: 100%;
+    height: 4vh;
+}
+#submit-button{
+    width:130px;
+    height:40px;
+    background-color: var(--base-logo);
+    border-radius: 105px;
+    border: 3px solid var(--base-color);
+    text-align: center;
+    display: grid;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+
+
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: var(--base-logo);
   color: var(--content-font);
   cursor: pointer;
-  padding: 18px;
+  padding: 18px 5px;
   width: 100%;
   text-align: left;
   border: none;
@@ -249,15 +298,7 @@ h3{
   background-color: var(--base-logo-darken);
 }
 
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  background-color: var(--base-logo);
-  display: none;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-}
+
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;

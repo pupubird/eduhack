@@ -37,10 +37,10 @@ for (i = 0; i < acc.length; i++) {
         /* Toggle between hiding and showing the active panel */
 
         var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
+        if (panel.style.display === "grid") {
             panel.style.display = "none";
         } else {
-            panel.style.display = "block";
+            panel.style.display = "grid";
         }
 
         if (panel.style.maxHeight) {
@@ -55,25 +55,31 @@ var plusPar = document.getElementById("plusParticipant");
 var formAccor = document.getElementById("form-accordian");
 plusPar.addEventListener("click", () => {
     var form_ammount = document.getElementsByClassName("accordion");
-
+    //accordion button
     var btn = document.createElement("DIV");
     btn.innerHTML = "Participant " + (form_ammount.length);
     btn.setAttribute("class", "accordion");
 
-    formAccor.appendChild(btn);
+    formAccor.insertBefore(btn, plusPar);
 
+    //participants details
     var div = document.createElement("DIV");
     div.setAttribute("class", "panel");
-    formAccor.appendChild(div);
+    formAccor.insertBefore(btn, plusPar);
+
+
+
+
+
 
     btn.addEventListener("click", function () {
         this.classList.toggle("active");
 
         var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
+        if (panel.style.display === "grid") {
             panel.style.display = "none";
         } else {
-            panel.style.display = "block";
+            panel.style.display = "grid";
         }
 
         if (panel.style.maxHeight) {
