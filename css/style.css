@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+:root{
+    --base-color : #F1F1E6;
+    /* #F1F1E6 
+    rgb(247, 247, 234)
+    rgb(245, 245, 215)*/
+    --base-logo:white;
+    --base-logo-lighten:rgb(247, 247, 234);
+    --base-logo-darken:rgb(245, 245, 215);
+    --base-darken: #FBFBFB;
+    --primarily-color: #3d4b68;
+    --secondary-color:#d35862;
+    --content-font:rgb(70, 69, 69);
+
+}
+*{
+    color: var(--content-font);
+    margin: 0;
+    padding: 0;
+    background: var(--base-color);
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+h1{
+    color: var(--content-font);
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    padding: 0;
+}
+
+h3{
+    font-size: 21px;
+    color: var(--content-font);
+    font-family: "Roboto",sans-serif;
+    font-weight: 200;
+}
+/* nav bar */
+#nav{
+    background-color: var(--base-logo);
+    height: 8vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;    
+    align-items: center;
+    position: fixed;
+    left: 0px;
+    width:100vw;
+    z-index: 1;
+}
+#nav-logo{
+    background-color: var(--base-logo);
+    z-index: inherit;
+}
+#nav-logo > a{
+    background-color: var(--base-logo);
+}
+#nav-logo > a > img{
+    margin-left: 20px;
+    height: 7vh;
+    width: auto;
+    background-color: var(--base-logo);
+}
+#nav-link{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: right;
+    margin-right: 5vw;
+    background-color: var(--base-logo);
+}
+#nav-link > a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+    color:var(--content-font);
+    background-color: var(--base-logo);
+}
+.hamburger-strip{
+    width:30px;
+    height: 5px;
+    background-color: var(--primarily-color);
+}
+#hamburger{
+    display: none;
+    z-index: 1;
+    width:30px;
+    cursor: pointer;
+}
+/* side nav */
+.side-nav {
+  height: 100%;
+  align-items: center;
+  width: 0; 
+  position: fixed; 
+  z-index: 4; 
+  top: 0; 
+  left: 0;
+  background-color: var(--base-logo-darken); 
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.side-nav a {
+  text-align: center;   
+  padding: 8px;
+  margin-bottom: 6vh;
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--content-font);
+  display: block;
+  transition: 0.3s;
+  background-color: var(--base-logo-darken);
+}
+
+.side-nav a:hover {
+  color: var(--secondary-color);
+}
+
+.side-nav .closebtn {
+  font-size: 36px;
+}
+/* nav bar ends */
+/* header css */
+#header{
+    background-color: var(--base-logo);
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-row-gap: 3vh;
+}
+#logo{
+    height:35vh;
+    width: auto;
+    background-color: var(--base-logo);
+}
+#countdown{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    border-radius: 10px;
+}
+#countdown > span{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--base-logo);
+    color:var(--content-font);
+    width: 100%;
+    height: 5vh;
+    padding: 10px;
+}
+.static{
+    font-weight: 200;
+}
+#seconds{
+    background-color: var(--base-logo);
+    color:var(--secondary-color);
+}
+.jumpy{
+    animation: jumpy 1s infinite 0s ease-in-out;
+      
+}
+/* header css ends */
+/* content css */
+#content{
+
+    height: 120vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--base-color);
+}
+.content-wrapper{
+
+    height: 120vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--base-color);
+}
+#content > h1{
+    
+    background-color: var(--base-color);
+}
+#content  >h3{
+    
+    background-color: var(--base-color);
+}
+.highlight-button{
+    width:130px;
+    height:40px;
+    background-color: var(--base-logo);
+    border-radius: 105px;
+    border: 3px solid var(--base-color);
+    text-align: center;
+    display: grid;
+    align-items: center;
+    margin: auto;
+}
+
+.highlight-button > a{
+    text-decoration: none;
+    color:var(--content-font);
+    border-radius: 105px;
+    background-color: var(--base-logo);
+}
+
+/* content css ends */
+/* join */
+#join{
+    height:100vh;
+    background-color: var(--base-logo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#join > h1{
+    margin-top: 4%;
+    background-color: var(--base-logo);
+}
+#join > h3{
+    background-color: var(--base-logo);
+}
+#form-accordian{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: var(--base-logo);
+  color: var(--content-font);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: var(--base-logo-darken);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: var(--base-logo);
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: var(--base-logo);
+  float: right;
+  margin-left: 5px;
+}
+#plusParticipant{
+    margin: auto;
+    margin-bottom: 10px;
+    width:130px;
+    height:40px;
+    background-color: var(--base-logo);
+    text-align: center;
+    display: grid;
+    align-items: center;
+    border: none;
+}
+#plusParticipant:before{
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: var(--base-logo);
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/* join ends */
+/* footer */
+#footer{
+    height:60vh;
+    box-sizing: content-box;
+}
+#footer-body{
+    height: 80%;
+    background-color: var(--base-logo-lighten);
+    display: grid;
+    justify-content: center;
+    text-align:center;
+    padding: 0;
+}
+.footer-content> h1{
+    margin-top:30px;
+    
+    background-color: var(--base-logo-lighten);
+}
+.footer-content> h3{
+    background-color: var(--base-logo-lighten);
+}
+#footer-body > div{
+    background-color: var(--base-logo-lighten);
+    
+}
+#footer-body > div > a{
+    background-color: var(--base-logo-lighten);
+    text-decoration: none;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+.footer-content-wrapper{
+    height: 10vh;
+}
+.footer-image{
+    width:15vh;
+    height: 15vh;
+    background-color: var(--base-logo-lighten);
+}
+#footer-foot{
+    height:20%;
+    background-color: var(--base-logo-darken);
+    box-shadow: 0px 0px 25px 5px var(--base-logo-lighten); 
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+#footer-foot > p{
+    background-color: var(--base-logo-darken);
+    font-family: "Roboto",sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+    color:var(--content-font);
+}
+/* footer ends */
+@media(max-width:700px){
+    #nav-link{
+        display:none;
+    }
+    #hamburger{
+        margin-left: 20px;
+        background-color: var(--base-logo);
+        display: grid;
+        grid-row-gap: 4px;
+    }
+    #nav-logo{  
+        z-index: 0;
+        width: 100vw;
+        position: fixed;
+        top:0px;
+        left:0px;
+        display: grid;
+        justify-content: center;
+    }
+    .content-wrapper{
+        width:80%;
+    }
+    .footer-content-wrapper{
+        width:100%;
+        display: grid;
+        justify-items: center;
+        grid-row-gap: 10px;
+        background-color: var(--base-logo-lighten);
+    }
+    .footer-content{
+        text-align: center;
+        display: grid;
+        grid-row-gap: 10px;
+        width:80%;
+        background-color: var(--base-logo-lighten);
+    }
+    h1{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 15px;
+    }
+}
+@media(max-width:400px){
+    #countdown{
+        font-size: 14px;
+        width: 80%;
+    }
+}
+@media(max-width:300px){
+    #countdown{
+        display: none;
+    }
+    #logo{
+        width:35vh;
+        height: 30vh;
+    }
+}
+
+
+@keyframes jumpy{
+    1%{
+        transform: translateY(-20%);
+        }
+    19%{
+        transform: translateY(0);
+        }
+}
