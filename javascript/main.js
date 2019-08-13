@@ -56,7 +56,7 @@ var formAccor = document.getElementById("form-accordian");
 plusPar.addEventListener("click", () => {
     var form_ammount = document.getElementsByClassName("accordion");
 
-    var btn = document.createElement("BUTTON");
+    var btn = document.createElement("DIV");
     btn.innerHTML = "Participant " + (form_ammount.length);
     btn.setAttribute("class", "accordion");
 

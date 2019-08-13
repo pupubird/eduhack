@@ -117,24 +117,156 @@
             <div id="join">
                 <h1>Join</h1>
                 <div id="form-accordian">
-                    <button class="accordion">Group Details</button>
-                    <div class="panel">
-                        <p>aaa</p>
-                    </div>
+                    <!-- form here, action to payment gateway -->
+                    <form action="#" id="form">
+                        <div class="accordion">Group Details</div>
+                        <div class="panel">
+                            <label for="groupName">Group Name</label>
+                            <input type="text" name="groupName"
+                                placeholder="Group Name">
+                            <label for="groupParticipants">Number of
+                                participants</label>
+                            <input type="number" name="groupParticipants">
+                            <label for="payment_method">Payment method</label>
+                            <select name="payment_method">
+                                <option selected>Select</option>
+                                <option value="onlinePay">Online payment</option>
+                                <option value="cash">Cash</option>
+                            </select>
+                        </div>
 
-                    <button class="accordion">Participant 1</button>
-                    <div class="panel">
-                        <p>Lorem ipsum...</p>
-                    </div>
+                        <div class="accordion">Participant 1</div>
+                        <div class="panel">
+                            <label for="par1_name">Full Name</label>
+                            <input type="text" name="par1_name">
 
-                    <button class="accordion">Participant 2</button>
-                    <div class="panel">
-                        <p>Lorem ipsum...</p>
-                    </div>
+                            <label for="par1_ic">IC/Passport Number</label>
+                            <input type="text" name="par1_ic">
+
+                            <label for="par1_gender">Gender</label>
+                            <input type="text" name="par1_gender">
+
+                            <label for="par1_mobile">Mobile phone</label>
+                            <input type="text" name="par1_mobilephone">
+
+                            <label for="par1_email">Email</label>
+                            <input type="email" name="par1_email">
+
+                            <label for="par1_university">University</label>
+                            <input type="text" name="par1_university">
+
+                            <label for="par1_programme">Programme</label>
+                            <input type="text" name="par1_programme">
+
+                            <label for="tshirt">T-shirt size</label>
+                            <select name="tshirt">
+                                <option selected>Select</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+
+                            <label for="vege">Vegetarian</label>
+                            <input type="checkbox" name="vege">
+
+                            <label for="emer_contact">Emergency contact number</label>
+                            <input type="text" name="emer_contact">
+
+                            <label for="emer_contact_name">Emergency contact
+                                name</label>
+                            <input type="text" name="emer_contact_name">
+                        </div>
+
+                        <div class="accordion">Participant 2</div>
+                        <div class="panel">
+                            <label for="par1_name">Full Name</label>
+                            <input type="text" name="par1_name">
+
+                            <label for="par1_ic">IC/Passport Number</label>
+                            <input type="text" name="par1_ic">
+
+                            <label for="par1_gender">Gender</label>
+                            <input type="text" name="par1_gender">
+
+                            <label for="par1_mobile">Mobile phone</label>
+                            <input type="text" name="par1_mobilephone">
+
+                            <label for="par1_email">Email</label>
+                            <input type="email" name="par1_email">
+
+                            <label for="par1_university">University</label>
+                            <input type="text" name="par1_university">
+
+                            <label for="par1_programme">Programme</label>
+                            <input type="text" name="par1_programme">
+
+                            <label for="tshirt">T-shirt size</label>
+                            <select name="tshirt">
+                                <option selected>Select</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+
+                            <label for="vege">Vegetarian</label>
+                            <input type="checkbox" name="vege">
+
+                            <label for="emer_contact">Emergency contact number</label>
+                            <input type="text" name="emer_contact">
+
+                            <label for="emer_contact_name">Emergency contact
+                                name</label>
+                            <input type="text" name="emer_contact_name">
+                        </div>
+                        <div class="accordion">Participant 3</div>
+                        <div class="panel">
+                            <label for="par1_name">Full Name</label>
+                            <input type="text" name="par1_name">
+
+                            <label for="par1_ic">IC/Passport Number</label>
+                            <input type="text" name="par1_ic">
+
+                            <label for="par1_gender">Gender</label>
+                            <input type="text" name="par1_gender">
+
+                            <label for="par1_mobile">Mobile phone</label>
+                            <input type="text" name="par1_mobilephone">
+
+                            <label for="par1_email">Email</label>
+                            <input type="email" name="par1_email">
+
+                            <label for="par1_university">University</label>
+                            <input type="text" name="par1_university">
+
+                            <label for="par1_programme">Programme</label>
+                            <input type="text" name="par1_programme">
+
+                            <label for="tshirt">T-shirt size</label>
+                            <select name="tshirt">
+                                <option selected>Select</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+
+                            <label for="vege">Vegetarian</label>
+                            <input type="checkbox" name="vege">
+
+                            <label for="emer_contact">Emergency contact number</label>
+                            <input type="text" name="emer_contact">
+
+                            <label for="emer_contact_name">Emergency contact
+                                name</label>
+                            <input type="text" name="emer_contact_name">
+                        </div>
+                        <input type="submit" value="Submit"
+                            class="highlight-button">
+                    </form>
                 </div>
-                <button id="plusParticipant">
-                </button>
-                <button class="highlight-button">Submit</button>
+                <button id="plusParticipant"> </button>
             </div>
             <!-- join ends -->
 
