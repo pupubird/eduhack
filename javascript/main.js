@@ -65,13 +65,9 @@ plusPar.addEventListener("click", () => {
     //participants details
     var div = document.createElement("DIV");
     div.setAttribute("class", "panel");
-    formAccor.insertBefore(btn, plusPar);
+    formAccor.insertBefore(div, plusPar);
 
-
-
-
-
-
+    acc = document.getElementsByClassName("accordion");
     btn.addEventListener("click", function () {
         this.classList.toggle("active");
 
