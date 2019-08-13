@@ -435,6 +435,9 @@ h3{
     h3{
         font-size: 15px;
     }
+    .accordion{
+        width: 80%;
+    }
 }
 @media(max-width:400px){
     #countdown{
