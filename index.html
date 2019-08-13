@@ -66,47 +66,56 @@
             <!-- content -->
             <div id="content">
                 <div class="content-wrapper">
-                    <h1>
-                        Event details
-                    </h1>
-                    <h3>
-                        <span>Date</span> : 7th-8th September 2019 (Saturday to
-                        Sunday)
-                    </h3>
-                    <h3>
-                        <span>Venue</span> : Sunway iLabs, Menara Sunway
-                    </h3>
-                    <h3>
-                        <span>Participating Universities</span> : All
-                        Universities
-                    </h3>
-                    <h3>
-                        <span>Theme</span> : Enhancing the Quality of Education
-                        through
-                        Technology and Entrepreneurship (Sustainable Development
-                        Goal 4)
-                    </h3>
-                    <h3>
-                        <span>Eligibility</span> : Participants must be an
-                        active full time
-                        undergraduate student in any university
-                    </h3>
-                    <h3>
-                        <span>Registration Fees</span> : RM100 per team
-                    </h3>
-                    <h3>
-                        <span>Team Composition</span> : 3-5 persons in a team
-                    </h3>
-                    <h3>
-                        <span>Prizes</span> :
-                    </h3>
-                    <h3> <span>First Prize</span>: RM 1000</h3>
-                    <h3>
-                        <span>First Runner-Up</span> : RM600
-                    </h3>
-                    <h3>
-                        <span>Second Runner-Up</span> : RM400
-                    </h3>
+
+                    <ul>
+                        <li>
+                            <h1 style="text-align: center;margin-bottom:40px;">
+                                Event Details
+                            </h1>
+                        </li>
+                        <li>
+                            <span>Theme</span> : Enhancing the Quality of
+                            Education
+                            through
+                            Technology and Entrepreneurship
+                        </li>
+                        <li>
+                            <span>Date</span> : 7th-8th September 2019 (Saturday
+                            to
+                            Sunday)
+                        </li>
+                        <li>
+                            <span>Venue</span> : Sunway iLabs, Menara Sunway
+                        </li>
+                        <li>
+                            <span>Participating Universities</span> : All
+                            Universities
+                        </li>
+                        <li>
+                            <span>Eligibility</span> : Participants must be an
+                            active full time
+                            undergraduate student in any university
+                        </li>
+                        <li>
+                            <span>Team Composition</span> : 3-5 persons in a
+                            team
+                        </li>
+                        <li>
+                            <span>Registration Fees</span> : RM100 per team
+                        </li>
+                        <br>
+                        <li style="text-align: center;">
+                            <u>Prizes</u>
+                        </li>
+                        <li style="text-align: center;"> <span>First Prize</span>:
+                            RM 1000</li>
+                        <li style="text-align: center;">
+                            <span>First Runner-Up</span> : RM600
+                        </li>
+                        <li style="text-align: center;">
+                            <span>Second Runner-Up</span> : RM400
+                        </li>
+                    </ul>
                 </div>
             </div>
             <!-- content ends -->
@@ -156,8 +165,8 @@
                                 <input type="text" name="par1_ic">
                             </div>
                             <div>
-                                <label for="gender">Gender</label>
-                                <select name="gender">
+                                <label for="par1_gender">Gender</label>
+                                <select name="par1_gender">
                                     <option selected>Select</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
@@ -181,8 +190,8 @@
                                 <input type="text" name="par1_programme">
                             </div>
                             <div>
-                                <label for="tshirt">T-shirt size</label>
-                                <select name="tshirt">
+                                <label for="par1_tshirt">T-shirt size</label>
+                                <select name="par1_tshirt">
                                     <option selected>Select</option>
                                     <option value="s">S</option>
                                     <option value="m">M</option>
@@ -191,18 +200,21 @@
                                 </select>
                             </div>
                             <div>
-                                <label for="vege">Vegetarian</label>
-                                <input type="checkbox" name="vege">
+                                <label for="par1_vege">Vegetarian</label>
+                                <input type="checkbox" name="par1_vege"
+                                    id="vege">
                             </div>
                             <div>
-                                <label for="emer_contact">Emergency contact
+                                <label for="par1_emer_contact">Emergency contact
                                     number</label>
-                                <input type="text" name="emer_contact">
+                                <input type="text" name="par1_emer_contact">
                             </div>
                             <div>
-                                <label for="emer_contact_name">Emergency contact
+                                <label for="par1_emer_contact_name">Emergency
+                                    contact
                                     name</label>
-                                <input type="text" name="emer_contact_name">
+                                <input type="text"
+                                    name="par1_emer_contact_name">
                             </div>
 
                         </div>
@@ -210,16 +222,16 @@
                         <div class="accordion">Participant 2</div>
                         <div class="panel">
                             <div>
-                                <label for="par1_name">Full Name</label>
-                                <input type="text" name="par1_name">
+                                <label for="par2_name">Full Name</label>
+                                <input type="text" name="par2_name">
                             </div>
                             <div>
-                                <label for="par1_ic">IC/Passport Number</label>
-                                <input type="text" name="par1_ic">
+                                <label for="par2_ic">IC/Passport Number</label>
+                                <input type="text" name="par2_ic">
                             </div>
                             <div>
-                                <label for="gender">Gender</label>
-                                <select name="gender">
+                                <label for="par2_gender">Gender</label>
+                                <select name="par2_gender">
                                     <option selected>Select</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
@@ -227,24 +239,24 @@
                                 </select>
                             </div>
                             <div>
-                                <label for="par1_mobile">Mobile phone</label>
-                                <input type="text" name="par1_mobilephone">
+                                <label for="par2_mobile">Mobile phone</label>
+                                <input type="text" name="par2_mobilephone">
                             </div>
                             <div>
-                                <label for="par1_email">Email</label>
-                                <input type="email" name="par1_email">
+                                <label for="par2_email">Email</label>
+                                <input type="email" name="par2_email">
                             </div>
                             <div>
-                                <label for="par1_university">University</label>
-                                <input type="text" name="par1_university">
+                                <label for="par2_university">University</label>
+                                <input type="text" name="par2_university">
                             </div>
                             <div>
-                                <label for="par1_programme">Programme</label>
-                                <input type="text" name="par1_programme">
+                                <label for="par2_programme">Programme</label>
+                                <input type="text" name="par2_programme">
                             </div>
                             <div>
-                                <label for="tshirt">T-shirt size</label>
-                                <select name="tshirt">
+                                <label for="par2_tshirt">T-shirt size</label>
+                                <select name="par2_tshirt">
                                     <option selected>Select</option>
                                     <option value="s">S</option>
                                     <option value="m">M</option>
@@ -253,33 +265,35 @@
                                 </select>
                             </div>
                             <div>
-                                <label for="vege">Vegetarian</label>
-                                <input type="checkbox" name="vege">
+                                <label for="par2_vege">Vegetarian</label>
+                                <input type="checkbox" name="vege" id="vege">
                             </div>
                             <div>
-                                <label for="emer_contact">Emergency contact
+                                <label for="par2_emer_contact">Emergency contact
                                     number</label>
-                                <input type="text" name="emer_contact">
+                                <input type="text" name="par2_emer_contact">
                             </div>
                             <div>
-                                <label for="emer_contact_name">Emergency contact
+                                <label for="par2_emer_contact_name">Emergency
+                                    contact
                                     name</label>
-                                <input type="text" name="emer_contact_name">
+                                <input type="text"
+                                    name="par2_emer_contact_name">
                             </div>
                         </div>
                         <div class="accordion">Participant 3</div>
                         <div class="panel">
                             <div>
-                                <label for="par1_name">Full Name</label>
-                                <input type="text" name="par1_name">
+                                <label for="par3_name">Full Name</label>
+                                <input type="text" name="par3_name">
                             </div>
                             <div>
-                                <label for="par1_ic">IC/Passport Number</label>
-                                <input type="text" name="par1_ic">
+                                <label for="par3_ic">IC/Passport Number</label>
+                                <input type="text" name="par3_ic">
                             </div>
                             <div>
-                                <label for="gender">Gender</label>
-                                <select name="gender">
+                                <label for="par3_gender">Gender</label>
+                                <select name="par3_gender">
                                     <option selected>Select</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
@@ -287,24 +301,24 @@
                                 </select>
                             </div>
                             <div>
-                                <label for="par1_mobile">Mobile phone</label>
-                                <input type="text" name="par1_mobilephone">
+                                <label for="par3_mobile">Mobile phone</label>
+                                <input type="text" name="par3_mobilephone">
                             </div>
                             <div>
-                                <label for="par1_email">Email</label>
-                                <input type="email" name="par1_email">
+                                <label for="par3_email">Email</label>
+                                <input type="email" name="par3_email">
                             </div>
                             <div>
-                                <label for="par1_university">University</label>
-                                <input type="text" name="par1_university">
+                                <label for="par3_university">University</label>
+                                <input type="text" name="par3_university">
                             </div>
                             <div>
-                                <label for="par1_programme">Programme</label>
-                                <input type="text" name="par1_programme">
+                                <label for="par3_programme">Programme</label>
+                                <input type="text" name="par3_programme">
                             </div>
                             <div>
-                                <label for="tshirt">T-shirt size</label>
-                                <select name="tshirt">
+                                <label for="par3_tshirt">T-shirt size</label>
+                                <select name="par3_tshirt">
                                     <option selected>Select</option>
                                     <option value="s">S</option>
                                     <option value="m">M</option>
@@ -313,18 +327,21 @@
                                 </select>
                             </div>
                             <div>
-                                <label for="vege">Vegetarian</label>
-                                <input type="checkbox" name="vege">
+                                <label for="par3_vege">Vegetarian</label>
+                                <input type="checkbox" name="par3_vege"
+                                    id="vege">
                             </div>
                             <div>
-                                <label for="emer_contact">Emergency contact
+                                <label for="par3_emer_contact">Emergency contact
                                     number</label>
-                                <input type="text" name="emer_contact">
+                                <input type="text" name="par3_emer_contact">
                             </div>
                             <div>
-                                <label for="emer_contact_name">Emergency contact
+                                <label for="par3_emer_contact_name">Emergency
+                                    contact
                                     name</label>
-                                <input type="text" name="emer_contact_name">
+                                <input type="text"
+                                    name="par3_emer_contact_name">
                             </div>
                         </div>
                     </form>
