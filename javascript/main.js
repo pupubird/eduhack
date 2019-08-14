@@ -5,6 +5,7 @@ var minite = document.getElementById("minutes");
 var second = document.getElementById("seconds");
 
 function update_countdown() {
+    // set date here at the new Date()
     var count = countdown(null, new Date("09/07/2019"), countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS);
 
     day.innerText = count["days"];

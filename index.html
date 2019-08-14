@@ -18,7 +18,7 @@
                 &times;</a>
             <a href="#header" onclick="closeNav()">Home</a>
             <a href="#content" onclick="closeNav()">Event Details</a>
-            <a href="#join" onclick="closeNav()" id="join-button">Join</a>
+            <a href="#join" onclick="closeNav()" id="join-button">Register</a>
         </div>
         <!-- mobile sidenav ends -->
         <div class="wrapper">
@@ -30,13 +30,13 @@
                 </div>
                 <div id="nav-logo">
                     <a href="#header">
-                        <img src="assets/small_logo.svg" alt="oops">
+                        <img src="assets/small-logo.png" alt="oops">
                     </a>
                 </div>
                 <div id="nav-link">
                     <a href="#header">Home</a>
                     <a href="#content">Event Details</a>
-                    <a href="#join" id="join-button">Join</a>
+                    <a href="#join" id="join-button">Register</a>
                 </div>
             </div>
             <!-- nav bar ends -->
@@ -46,7 +46,15 @@
                     wrong
                     pls cry">
                 <div id="countdown">
+                    <!-- delete when date is set -->
+                    <span class="static"></span>
+                    <span class="static">Coming</span>
+                    <span class="static">Soon</span>
+                    <span></span>
+                    <!--  -->
 
+
+                    <!-- uncomment when date is certain, set date in main.js as well
                     <span id="days"></span>
                     <span id="hours"></span>
                     <span id="minutes"></span>
@@ -55,10 +63,11 @@
                     <span class="static">Hours</span>
                     <span class="static">Minutes</span>
                     <span class="static">Seconds</span>
+                    -->
                 </div>
                 <div class="highlight-button">
                     <a href="#join">
-                        Join
+                        Register
                     </a>
                 </div>
             </div>
@@ -93,9 +102,12 @@
                             Technology and Entrepreneurship
                         </li>
                         <li>
+                            <span>Date</span>: Coming soon in October
+                            <!-- uncomment when date is certain 
                             <span>Date</span> : 7th-8th September 2019 (Saturday
                             to
                             Sunday)
+                            -->
                         </li>
                         <li>
                             <span>Venue</span> : Sunway iLabs, Menara Sunway
@@ -126,7 +138,7 @@
             <!-- join -->
             <div id="join">
                 <div id="form-accordian">
-                    <h1>Join Now</h1>
+                    <h1>Register Now</h1>
                     <!-- form here, action to payment gateway -->
                     <form action="#" id="form">
                         <!-- group form -->

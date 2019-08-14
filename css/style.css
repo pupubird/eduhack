@@ -58,9 +58,10 @@ h3{
 }
 #nav-logo > a > img{
     margin-left: 20px;
-    height: 7vh;
+    height: 20px;
     width: auto;
     background-color: var(--base-logo);
+    text-align: center;
 }
 #nav-link{
     display: grid;
@@ -405,6 +406,7 @@ h3{
         left:0px;
         display: grid;
         justify-content: center;
+        margin-top:10px;
     }
     .content-wrapper{
         width:80%;
