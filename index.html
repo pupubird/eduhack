@@ -4,399 +4,180 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Eduhack 2019 | Sunway Tech Club</title>
+        <title>EduHack 2019 | Sunway Tech Club</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="assets/STC.png">
     </head>
     <body>
-        <!-- nav bar -->
-
-        <!-- movile sidenav -->
-        <div id="sidenav" class="side-nav">
-
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                &times;</a>
-            <a href="#header" onclick="closeNav()">Home</a>
-            <a href="#content" onclick="closeNav()">Event Details</a>
-            <a href="#join" onclick="closeNav()" id="join-button">Register</a>
-        </div>
-        <!-- mobile sidenav ends -->
-        <div class="wrapper">
-            <div id="nav">
-                <div id="hamburger" onclick="openNav();">
-                    <div class="hamburger-strip"></div>
-                    <div class="hamburger-strip"></div>
-                    <div class="hamburger-strip"></div>
-                </div>
-                <div id="nav-logo">
-                    <a href="#header">
-                        <img src="assets/small-logo.png" alt="oops">
-                    </a>
-                </div>
-                <div id="nav-link">
-                    <a href="#header">Home</a>
-                    <a href="#content">Event Details</a>
-                    <a href="#join" id="join-button">Register</a>
-                </div>
-            </div>
-            <!-- nav bar ends -->
-            <!-- header -->
-            <div id="header">
-                <img id="logo" src="assets/logo.svg" alt="gg something went
-                    wrong
-                    pls cry">
+        <nav>
+            <ul id="nav-bar">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#event-details">Event Details</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li> <a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <div id="header">
+            <div id="header-div">
+                <img src="assets/logo.png" alt="logo not found" id="logo">
                 <div id="countdown">
-                    <!-- delete when date is set -->
-                    <span class="static"></span>
-                    <span class="static">Coming</span>
-                    <span class="static">Soon</span>
-                    <span></span>
-                    <!--  -->
-
-
                     <!-- uncomment when date is certain, set date in main.js as well
+                                                            -->
                     <span id="days"></span>
                     <span id="hours"></span>
                     <span id="minutes"></span>
-                    <span><p id="seconds"></p></span>
+                    <span>
+                        <p id="seconds"></p>
+                    </span>
                     <span class="static">Days</span>
                     <span class="static">Hours</span>
                     <span class="static">Minutes</span>
                     <span class="static">Seconds</span>
-                    -->
+                    <!-- -->
                 </div>
-                <div class="highlight-button">
-                    <a href="#join">
-                        Register
-                    </a>
-                </div>
-            </div>
-            <!-- header ends -->
-            <!-- content -->
-            <div id="content">
-                <div class="content-wrapper">
-
-                    <ul>
-
-                        <li>
-                            <h1 style="text-align: center;margin-bottom:40px;">
-                                Event Details
-                            </h1>
-                        </li>
-                        <li style="text-align: center;">
-                            <u>Prizes</u>
-                        </li>
-                        <li style="text-align: center;"> <span>First Prize</span>:
-                            RM 1000</li>
-                        <li style="text-align: center;">
-                            <span>First Runner-Up</span> : RM600
-                        </li>
-                        <li style="text-align: center;">
-                            <span>Second Runner-Up</span> : RM400
-                        </li>
-                        <br>
-                        <li>
-                            <span>Theme</span> : Enhancing the Quality of
-                            Education
-                            through
-                            Technology and Entrepreneurship
-                        </li>
-                        <li>
-                            <span>Date</span>: Coming soon in October
-                            <!-- uncomment when date is certain 
-                            <span>Date</span> : 7th-8th September 2019 (Saturday
-                            to
-                            Sunday)
-                            -->
-                        </li>
-                        <li>
-                            <span>Venue</span> : Sunway iLabs, Menara Sunway
-                        </li>
-                        <li>
-                            <span>Participating Universities</span> : All
-                            Universities
-                        </li>
-                        <li>
-                            <span>Eligibility</span> : Participants must be
-                            active undergraduate students
-                        </li>
-                        <li>
-                            <span>Team Composition</span> : 3-5 individuals per
-                            group
-                        </li>
-                        <li>
-                            <span>Registration Fees</span> : RM100 per team
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-            <!-- content ends -->
-
-
-
-            <!-- join -->
-            <div id="join">
-                <div id="form-accordian">
-                    <h1>Register Now</h1>
-                    <!-- form here, action to payment gateway -->
-                    <form action="#" id="form">
-                        <!-- group form -->
-                        <!-- look at here uwu -->
-                        <div class="accordion">Group Details</div>
-                        <div class="panel">
-                            <div>
-                                <label for="groupName">Group Name</label>
-                                <input type="text" name="groupName"
-                                    placeholder="Group Name">
-                            </div>
-                            <div>
-                                <label for="payment_method">Payment method</label>
-                                <select name="payment_method">
-                                    <option selected>Select</option>
-                                    <option value="onlinePay">Online payment</option>
-                                    <option value="cash">Cash</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="accordion">Participant 1</div>
-                        <div class="panel">
-                            <!-- person form -->
-                            <!-- look at only this div uwu, the next few are just copypasted -->
-                            <div>
-                                <label for="par1_name">Full Name</label>
-                                <input type="text" name="par1_name">
-                            </div>
-                            <div>
-                                <label for="par1_ic">IC/Passport Number</label>
-                                <input type="text" name="par1_ic">
-                            </div>
-                            <div>
-                                <label for="par1_gender">Gender</label>
-                                <select name="par1_gender">
-                                    <option selected>Select</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="pref_not">Prefer not to say</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="par1_mobile">Mobile phone</label>
-                                <input type="text" name="par1_mobilephone">
-                            </div>
-                            <div>
-                                <label for="par1_email">Email</label>
-                                <input type="email" name="par1_email">
-                            </div>
-                            <div>
-                                <label for="par1_university">University</label>
-                                <input type="text" name="par1_university">
-                            </div>
-                            <div>
-                                <label for="par1_programme">Programme</label>
-                                <input type="text" name="par1_programme">
-                            </div>
-                            <div>
-                                <label for="par1_tshirt">T-shirt size</label>
-                                <select name="par1_tshirt">
-                                    <option selected>Select</option>
-                                    <option value="s">S</option>
-                                    <option value="m">M</option>
-                                    <option value="l">L</option>
-                                    <option value="xl">XL</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="par1_vege">Vegetarian</label>
-                                <input type="checkbox" name="par1_vege"
-                                    id="vege">
-                            </div>
-                            <div>
-                                <label for="par1_emer_contact">Emergency contact
-                                    number</label>
-                                <input type="text" name="par1_emer_contact">
-                            </div>
-                            <div>
-                                <label for="par1_emer_contact_name">Emergency
-                                    contact
-                                    name</label>
-                                <input type="text"
-                                    name="par1_emer_contact_name">
-                            </div>
-
-                        </div>
-
-                        <div class="accordion">Participant 2</div>
-                        <div class="panel">
-                            <div>
-                                <label for="par2_name">Full Name</label>
-                                <input type="text" name="par2_name">
-                            </div>
-                            <div>
-                                <label for="par2_ic">IC/Passport Number</label>
-                                <input type="text" name="par2_ic">
-                            </div>
-                            <div>
-                                <label for="par2_gender">Gender</label>
-                                <select name="par2_gender">
-                                    <option selected>Select</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="pref_not">Prefer not to say</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="par2_mobile">Mobile phone</label>
-                                <input type="text" name="par2_mobilephone">
-                            </div>
-                            <div>
-                                <label for="par2_email">Email</label>
-                                <input type="email" name="par2_email">
-                            </div>
-                            <div>
-                                <label for="par2_university">University</label>
-                                <input type="text" name="par2_university">
-                            </div>
-                            <div>
-                                <label for="par2_programme">Programme</label>
-                                <input type="text" name="par2_programme">
-                            </div>
-                            <div>
-                                <label for="par2_tshirt">T-shirt size</label>
-                                <select name="par2_tshirt">
-                                    <option selected>Select</option>
-                                    <option value="s">S</option>
-                                    <option value="m">M</option>
-                                    <option value="l">L</option>
-                                    <option value="xl">XL</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="par2_vege">Vegetarian</label>
-                                <input type="checkbox" name="vege" id="vege">
-                            </div>
-                            <div>
-                                <label for="par2_emer_contact">Emergency contact
-                                    number</label>
-                                <input type="text" name="par2_emer_contact">
-                            </div>
-                            <div>
-                                <label for="par2_emer_contact_name">Emergency
-                                    contact
-                                    name</label>
-                                <input type="text"
-                                    name="par2_emer_contact_name">
-                            </div>
-                        </div>
-                        <div class="accordion">Participant 3</div>
-                        <div class="panel">
-                            <div>
-                                <label for="par3_name">Full Name</label>
-                                <input type="text" name="par3_name">
-                            </div>
-                            <div>
-                                <label for="par3_ic">IC/Passport Number</label>
-                                <input type="text" name="par3_ic">
-                            </div>
-                            <div>
-                                <label for="par3_gender">Gender</label>
-                                <select name="par3_gender">
-                                    <option selected>Select</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="pref_not">Prefer not to say</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="par3_mobile">Mobile phone</label>
-                                <input type="text" name="par3_mobilephone">
-                            </div>
-                            <div>
-                                <label for="par3_email">Email</label>
-                                <input type="email" name="par3_email">
-                            </div>
-                            <div>
-                                <label for="par3_university">University</label>
-                                <input type="text" name="par3_university">
-                            </div>
-                            <div>
-                                <label for="par3_programme">Programme</label>
-                                <input type="text" name="par3_programme">
-                            </div>
-                            <div>
-                                <label for="par3_tshirt">T-shirt size</label>
-                                <select name="par3_tshirt">
-                                    <option selected>Select</option>
-                                    <option value="s">S</option>
-                                    <option value="m">M</option>
-                                    <option value="l">L</option>
-                                    <option value="xl">XL</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="par3_vege">Vegetarian</label>
-                                <input type="checkbox" name="par3_vege"
-                                    id="vege">
-                            </div>
-                            <div>
-                                <label for="par3_emer_contact">Emergency contact
-                                    number</label>
-                                <input type="text" name="par3_emer_contact">
-                            </div>
-                            <div>
-                                <label for="par3_emer_contact_name">Emergency
-                                    contact
-                                    name</label>
-                                <input type="text"
-                                    name="par3_emer_contact_name">
-                            </div>
-                        </div>
-                    </form>
-                    <div id="plusParticipant"> </div>
-                    <input type="submit" value="Submit"
-                        id="submit-button">
-                </div>
+                <button class="button">Register</button>
             </div>
         </div>
-        <!-- join ends -->
-
-
-
-
-        <!-- footer -->
-
-        <div id="footer">
-            <div id="footer-body">
-                <div class="footer-content-wrapper">
-                    <div class="footer-content">
-                        <h1>Contact</h1>
-                        <h3>Join our conversation here. If you have any
-                            question
-                            from the
-                            event, you can ask it here as well.</h3>
+        <div id="event-details">
+            <h1 class="tab-header">
+                Event Details
+            </h1>
+            <h4 class="tab-second-header">
+                About EduHack
+            </h4>
+            <p class="tab-content">
+                EduHack is a collaborative hackathon with participants of
+                different discipline. We do not only focus on technology
+                developers but also on business, designers, and educators. From
+                this perspective, we will have numerous ideas from
+                different viewpoints that can lead to a more synergistic
+                solution to enhance education quality together.
+                <br>
+                <br>
+                EduHack is open for any full time undergraduate student studying
+                in Malaysia. To us, hackathons are a great opportunity
+                to learn, grow and make mistakes in a safe environment.
+                <br>
+                br
+                In EduHack, a total of 20 teams will be given 24 hours to
+                develop a project in a team at Sunway iLabs. The topic of
+                EduHack is quality education. In today’s rapid transformation
+                has led to many changes in our daily life. The quality of
+                education will have to follow suit to consistently improve to
+                better educate the generations to come. If you have a
+                great idea to enhance quality education by any means, we highly
+                encourage you to participate as you may be on to
+                something big.
+            </p>
+        </div>
+        <div id="faq">
+            <h1>FAQ</h1>
+            <div id="faq-content">
+                <div>
+                    <button class="collapsible">▼ Who can attend?</button>
+                    <div class="content">
+                        <p>Full time undergraduate student in any discipline
+                            studying in Malaysia can attend</p>
                     </div>
                 </div>
                 <div>
-                    <a
-                        href="https://sunwaytechclub.slack.com/messages/GDQPSM737/convo/GDQPSM737-1545030725.001400/">
-                        <img src="assets/slack.png" alt=""
-                            class="footer-image">
-                    </a>
-                    <a
-                        href="https://t.me/joinchat/IDjwGkH7Xu5PAwDu9bbzgw">
-                        <img src="assets/telegram.png" alt=""
-                            class="footer-image">
-                    </a>
+                    <button class="collapsible">▼ How much does it cost?</button>
+                    <div class="content">
+                        <p>It is RM 100 per team, food and snacks are provided
+                            during the hackathon</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="collapsible">▼ Can I apply as a beginner?</button>
+                    <div class="content">
+                        <p>Yes, of course! We highly encourage beginners to
+                            apply
+                            and contribute with the skills you have!</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="collapsible">▼ What can I build?</button>
+                    <div class="content">
+                        <p>You can work with whatever you have as long as you
+                            can
+                            present your idea!</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="collapsible">▼ Head start?</button>
+                    <div class="content">
+                        <p>Projects done out of the 24 hours will not be
+                            accepted,
+                            although you may prepare materials and ideas before
+                            that.
+                            <br>
+                            <br>
+                            We
+                            also encourage you to use a service like Github for
+                            collaboration on projects.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="collapsible">▼ What should I bring to the
+                        event?</button>
+                    <div class="content">
+                        <p>Bring your laptop, charger, and other tech gadgets
+                            you
+                            might use for your project.
+                            <br>
+                            <br>
+                            Comfortable clothes are
+                            also
+                            recommended.
+                            <br>
+                            <br>
+                            For sleeping, do bring your sleeping
+                            bag
+                            for a comfortable snooze.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <button class="collapsible">▼ Overnight stay?</button>
+                    <div class="content">
+                        <p>Sure! You may camp for a night at Sunway iLabs, just
+                            bring your sleeping bag!</p>
+                    </div>
                 </div>
             </div>
-            <!-- footer ends -->
-            <div id="footer-foot">
-                <p>© 2019 Sunway Tech Club
-                    All rights reserved.</p>
+        </div>
+        <div id="about-us">
+            <h1>ABOUT US</h1>
+            <p>
+                We are the committees of Sunway Tech Club, an undergraduate
+                student-run university club founded on a vision to build a
+                community of students aspire to bridge the gap of tech
+                education, industry, and technopreneurship.
+                <br>
+                <br>
+                We are highly committed to form a community and culture to
+                inspire students to be creative, innovative, and
+                collaborative beyond the classrooms. To date, Sunway Tech Club
+                has successfully run industry talk events, technical
+                workshops, co-hosted internationally known tech festival,
+                hackathons, and many others more to come. Hence, as committees
+                of Sunway Tech Club, we are highly committed and inspired to
+                bring EduHack to you.
+            </p>
+            <img src="assets/comittee.png" alt="comittee image">
+        </div>
+        <div id="footer">
+            <h1>Contact</h1>
+            <h4>Join our conversation here. If you have any question from the
+                event, you can ask it here as well.</h4>
+            <div id="footer-image">
+                <img src="assets/slack.png" alt="slack image">
+                <img src="assets/telegram.png" alt="telegram image">
             </div>
         </div>
-        <script src="javascript/countdown.js"></script>
-        <script src="javascript/main.js"></script>
+        <div id="credit">&copy;Sunway Tech Club 2019</div>
+        <script src="js/countdown.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>

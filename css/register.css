@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap');
+:root{
+    --base-color : rgb(223, 223, 205);
+    --darken-base: #EAEAD3;
+    --primary-color: #2D3B57;
+    --second-color: #6281A5;
+}
+body{
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: var(--base-color);
+    box-sizing: border-box;
+}
+
+#nav-bar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: var(--primary-color);
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar li{
+    list-style: none;
+    color: var(--base-color);
+    font-size: 13px;
+    background-color: var(--primary-color);
+}
+#nav-bar li>a{
+    text-decoration: none; 
+    color:var(--base-color);
+    background-color: var(--primary-color);
+}
+#nav-bar li>a::before{
+    content: '←';
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/* join */
+#join{
+    min-height:100vh;
+    max-height: auto;
+    background-color: var(--base-logo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+#form-accordian > h1{
+    background-color: var(--base-logo);
+    text-align: center;
+    margin-bottom: 6vh;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 200;
+}
+#form-accordian >img{
+    margin-bottom: 6vh;
+}
+#form-accordian{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: var(--base-logo);
+    display: flex;
+    flex-direction: column;
+}
+#form{
+    background-color: var(--base-logo);
+    
+}
+#vege{
+    width: 10%;
+}
+/* form details styling */
+.panel {
+  padding: 0 18px;
+  background-color: var(--base-logo);
+  display: none;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  justify-items: center;
+  margin-bottom: 3vh;
+
+}
+.panel > div{
+    background-color: var(--base-logo);
+    width: 60%;
+    padding: 1vh;
+    
+}
+.panel >div> label{
+    display: block;
+    background-color: var(--base-logo);
+    text-align: left;
+}
+.panel >div> input{
+    margin-top: 5px;
+    display: inline-block;
+    background-color: var(--base-logo);
+    width: 100%;
+}
+#submit-button{
+    width:130px;
+    height:40px;
+    background-color: var(--base-logo);
+    border-radius: 105px;
+    border: 3px solid var(--base-color);
+    text-align: center;
+    display: grid;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: var(--base-logo);
+  color: var(--content-font);
+  cursor: pointer;
+  padding: 18px 5px;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  border: none; 
+  border-radius: 10px;  
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);  
+  outline: none;
+  transition: 0.4s;
+  margin-bottom: 1vh;
+}
+
+.active, .accordion:hover {
+  background-color: var(--base-logo-darken);
+}
+
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: var(--base-logo);
+  float: right;
+  margin-left: 5px;
+}
+#plusParticipant{
+    margin: auto;
+    margin-bottom: 10px;
+    width:130px;
+    height:40px;
+    background-color: var(--base-logo);
+    text-align: center;
+    display: grid;
+    align-items: center;
+    border: none;
+}
+#plusParticipant:after{
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: var(--base-logo);
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+#submit-button{
+  border: none; 
+  border-radius: 10px;  
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);  
+  width: 60px;
+}
+/* join ends */
+
+@media (min-width:1000px){
+    .accordion{
+        width:60%;
+    }
+}

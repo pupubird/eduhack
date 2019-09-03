@@ -1,149 +1,97 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap');
 :root{
-    --base-color : #F1F1E6;
-    /* #F1F1E6 
-    rgb(247, 247, 234)
-    rgb(245, 245, 215)*/
-    --base-logo:white;
-    --base-logo-lighten:rgb(247, 247, 234);
-    --base-logo-darken:rgb(245, 245, 215);
-    --base-darken: #FBFBFB;
-    --primarily-color: #3d4b68;
-    --secondary-color:#d35862;
-    --content-font:rgb(70, 69, 69);
-
+    --base-color : rgb(223, 223, 205);
+    --darken-base: rgb(212, 212, 190);
+    --primary-color: #2D3B57;
+    --second-color: #6281A5;
+}
+body{
+    overflow-x: hidden;
 }
 *{
-    color: var(--content-font);
     margin: 0;
     padding: 0;
-    background: var(--base-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: var(--base-color);
     scroll-behavior: smooth;
 }
-h1{
-    color: var(--content-font);
-    font-family: "Roboto",sans-serif;
-    font-weight: 400;
-    font-size: 44px;
-    padding: 0;
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-h3{
-    font-size: 21px;
-    color: var(--content-font);
-    font-family: "Roboto",sans-serif;
-    font-weight: 200;
+::-webkit-scrollbar-track {
+    background-color: var(--darken-base);
+    
 }
-/* nav bar */
-#nav{
-    background-color: var(--base-logo);
-    height: 8vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: center;    
-    align-items: center;
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--second-color); 
+}
+/* scroll bar ends */
+/* nav */
+#nav-bar{
     position: fixed;
-    left: 0px;
-    width:100vw;
-    z-index: 1;
-}
-#nav-logo{
-    background-color: var(--base-logo);
-    z-index: inherit;
-}
-#nav-logo > a{
-    background-color: var(--base-logo);
-}
-#nav-logo > a > img{
-    margin-left: 20px;
-    height: 20px;
-    width: auto;
-    background-color: var(--base-logo);
-    text-align: center;
-}
-#nav-link{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-content: center;
-    justify-items: right;
-    margin-right: 5vw;
-    background-color: var(--base-logo);
-}
-#nav-link > a{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    text-decoration: none;
-    color:var(--content-font);
-    background-color: var(--base-logo);
-}
-.hamburger-strip{
-    width:30px;
-    height: 5px;
-    background-color: var(--primarily-color);
-}
-#hamburger{
-    display: none;
-    z-index: 1;
-    width:30px;
-    cursor: pointer;
-}
-/* side nav */
-.side-nav {
-  height: 100%;
-  align-items: center;
-  width: 0; 
-  position: fixed; 
-  z-index: 4; 
-  top: 0; 
-  left: 0;
-  background-color: var(--base-logo-darken); 
-  overflow-x: hidden;
-  padding-top: 60px; 
-  transition: 0.5s; 
+    top: 0;
+    width: 100vw;
+    background-color: var(--primary-color);
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.side-nav a {
-  text-align: center;   
-  padding: 8px;
-  margin-bottom: 6vh;
-  text-decoration: none;
-  font-size: 15px;
-  color: var(--content-font);
-  display: block;
-  transition: 0.3s;
-  background-color: var(--base-logo-darken);
+#nav-bar li{
+    list-style: none;
+    color: var(--base-color);
+    font-size: 13px;
+    margin-right: 4vw;
+    background-color: var(--primary-color);
 }
+#nav-bar li>a{
+    text-decoration: none; 
+    color:var(--base-color);
+    background-color: var(--primary-color);
+}
+/* nav ends */
 
-.side-nav a:hover {
-  color: var(--secondary-color);
-}
-
-.side-nav .closebtn {
-  font-size: 36px;
-}
-/* nav bar ends */
-/* header css */
+/* header & countdown*/
 #header{
-    background-color: var(--base-logo);
     min-height: 100vh;
     display: grid;
-    justify-items: center;
-    align-content: center;
-    grid-row-gap: 3vh;
+    justify-content: center;
+    align-items: center;
+}
+#header-div{
+    text-align: center;
 }
 #logo{
-    height:35vh;
-    width: auto;
-    background-color: var(--base-logo);
+    width: 300px;
+    height: 250px;
+}
+#counter{
+    margin-bottom: 20px;
+}
+.button{
+    background-color: #FFFFF4;
+    width: 110px;
+    height: 37px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
 }
 #countdown{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     border-radius: 10px;
+    margin-bottom: 4vh;
 }
 #countdown > span{
     display: grid;
@@ -166,300 +114,185 @@ h3{
     animation: jumpy 1s infinite 0s ease-in-out;
       
 }
-/* header css ends */
-/* content css */
-#content{
-    min-height: 90vh;
+/* header & countdown ends */
+/* event details */
+#event-details{
+    min-height: 80vh;
+}
+.tab-header{
+    margin-left: 14vw;
+    margin-bottom: 20px;
+    color: #2D3B57;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+.tab-second-header{
+    margin-left:  15vw;
+    margin-bottom: 20px;
+    color: #2D3B57;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.tab-content{
+    font-size: 17px;
+    margin: 10px  19vw 0px  19vw;
+    text-justify: inter-word;
+    text-align: justify;
+    color: #2D3B57;
+    font-family: 'Raleway', sans-serif;
+}
+/* event details ends */
+/* faq */
+#faq{
+    min-height: 50vh;
+    background-color: var(--primary-color);
+}
+#faq >h1{
+    margin-left: 14vw;
+    margin-bottom: 4vh;
+    padding-top: 20px;
+    color:var(--base-color);
+    background-color: var(--primary-color);
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+#faq-content{
+    width: 80%;
+    margin:auto;
+    background-color: var(--primary-color);
     display: grid;
-    justify-items: center;
-    align-items: center;
-    background-color: var(--base-logo);
+    grid-row-gap: 4vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.content-wrapper{
-    min-height: 90vh;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    background-color: var(--base-logo);
-    font-weight: 200;
+#faq-content p{
+    padding: 10px;
+    font-size: 13px;
 }
-.content-wrapper > ul{
-    line-height: 5vh;
-    padding: 25px;
+#faq-content >div{
+    background-color: var(--primary-color);
 }
-.content-wrapper > ul > li{
-    text-decoration: none;
-    list-style: none;
-    font-size: 18px;
-    text-align: left;
-}
-.content-wrapper > ul > li > span{
-    color: var(--secondary-color);
-}
-.highlight-button{
-    width:130px;
-    height:40px;
-    background-color: var(--base-logo);
-    border-radius: 105px;
-    border: 3px solid var(--base-color);
-    text-align: center;
-    display: grid;
-    align-items: center;
-    margin: auto;
+.collapsible {
+  background-color: var(--base-color);
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  margin-left: 10%;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: all 1s ease;
 }
 
-.highlight-button > a{
-    text-decoration: none;
-    color:var(--content-font);
-    border-radius: 105px;
-    background-color: var(--base-logo);
+.active, .collapsible:hover {
+  background-color: #ccc;
 }
 
-/* content css ends */
-/* join */
-#join{
-    min-height:100vh;
-    max-height: auto;
-    background-color: var(--base-logo);
+.content {
+  margin-left: 10%;
+  margin-bottom: 10%;
+  width: 80%;
+  display: none;
+  overflow: hidden;
+  background-color: var(--darken-base);
+}
+/* faq ends */
+/* about us */
+#about-us{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--second-color);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    overflow: auto;
 }
-#form-accordian > h1{
-    background-color: var(--base-logo);
-    text-align: center;
-    margin-bottom: 10vh;
+#about-us >h1{
+    margin-left: 14vw;
+    padding-top: 20px;
+    color:var(--base-color);
+    background-color: var(--second-color);
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
 }
-#form-accordian{
-    width: 80%;
-    height: auto;
+#about-us >p{
+    font-size: 17px;
+    margin: 10px  19vw 0px  19vw;
+    text-justify: inter-word;
+    text-align: justify;
+    color: var(--base-color);
+    background-color: var(--second-color);
+    font-family: 'Raleway', sans-serif;
+}
+#about-us >img{
+    width: 50%;
     margin: auto;
-    background-color: var(--base-logo);
+    background-color: var(--second-color);
 }
-#form{
-    background-color: var(--base-logo);
-    
-}
-#vege{
-    width: 10%;
-}
-/* form details styling */
-.panel {
-  padding: 0 18px;
-  background-color: var(--base-logo);
-  display: none;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-  justify-items: center;
-  margin-bottom: 3vh;
-
-}
-.panel > div{
-    background-color: var(--base-logo);
-    width: 60%;
-    padding: 1vh;
-    
-}
-.panel >div> label{
-    display: block;
-    background-color: var(--base-logo);
-    text-align: left;
-}
-.panel >div> input{
-    margin-top: 5px;
-    display: inline-block;
-    background-color: var(--base-logo);
-    width: 100%;
-}
-#submit-button{
-    width:130px;
-    height:40px;
-    background-color: var(--base-logo);
-    border-radius: 105px;
-    border: 3px solid var(--base-color);
-    text-align: center;
-    display: grid;
-    align-items: center;
-    margin: auto;
-    margin-bottom: 15px;
-}
-
-
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: var(--base-logo);
-  color: var(--content-font);
-  cursor: pointer;
-  padding: 18px 5px;
-  width: 60%;
-  margin: auto;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: var(--base-logo-darken);
-}
-
-
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: var(--base-logo);
-  float: right;
-  margin-left: 5px;
-}
-#plusParticipant{
-    margin: auto;
-    margin-bottom: 10px;
-    width:130px;
-    height:40px;
-    background-color: var(--base-logo);
-    text-align: center;
-    display: grid;
-    align-items: center;
-    border: none;
-}
-#plusParticipant:after{
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: var(--base-logo);
-}
-
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-/* join ends */
-/* footer */
+/* about us ends */
+/* footer and credit */
 #footer{
-    height:60vh;
-    box-sizing: content-box;
-}
-#footer-body{
-    height: 80%;
-    background-color: var(--base-logo-lighten);
-    display: grid;
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align:center;
-    padding: 0;
+    text-align: center;
 }
-.footer-content> h1{
-    margin-top:30px;
-    
-    background-color: var(--base-logo-lighten);
+#footer >h1{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
 }
-.footer-content> h3{
-    background-color: var(--base-logo-lighten);
+#footer> h4{
+    margin-top: 2vh; 
+    font-weight: 300;
 }
-#footer-body > div{
-    background-color: var(--base-logo-lighten);
-    
+#footer-image >img{
+    width: 100px;
+    margin: 4vh 4vw 0 4vw;
 }
-#footer-body > div > a{
-    background-color: var(--base-logo-lighten);
-    text-decoration: none;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
+/* footer */
+#credit{
+    min-height: 4vh;
+    text-align: center;
+    font-size: 14px;
+    background-color: var(--darken-base);
 }
-.footer-content-wrapper{
-    height: 10vh;
-}
-.footer-image{
-    width:15vh;
-    height: 15vh;
-    background-color: var(--base-logo-lighten);
-}
-#footer-foot{
-    height:20%;
-    background-color: var(--base-logo-darken);
-    box-shadow: 0px 0px 25px 5px var(--base-logo-lighten); 
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
-#footer-foot > p{
-    background-color: var(--base-logo-darken);
-    font-family: "Roboto",sans-serif;
-    font-size: 10px;
-    font-weight: 200;
-    color:var(--content-font);
-}
-/* footer ends */
+/* footer and credit ends */
 @media(max-width:700px){
-    #nav-link{
-        display:none;
-    }
-    #hamburger{
-        margin-left: 20px;
-        background-color: var(--base-logo);
-        display: grid;
-        grid-row-gap: 4px;
-    }
-    #nav-logo{  
-        z-index: 0;
-        width: 100vw;
-        position: fixed;
-        top:0px;
-        left:0px;
-        display: grid;
+    #nav-bar{
         justify-content: center;
-        margin-top:10px;
     }
-    .content-wrapper{
-        width:80%;
+    
+    #event-details{
+        margin-bottom: 10%;
     }
-    .content-wrapper > ul > li{
-        font-size: 15px;
+    #faq{
+        min-height: 100vh;
     }
-    .footer-content-wrapper{
-        width:100%;
-        display: grid;
-        justify-items: center;
-        grid-row-gap: 10px;
-        background-color: var(--base-logo-lighten);
+    #faq-content{
+        grid-template-columns: 1fr;
     }
-    .footer-content{
-        text-align: center;
-        display: grid;
-        grid-row-gap: 10px;
-        width:80%;
-        background-color: var(--base-logo-lighten);
+    #faq >h1{
+        margin-left: 4vw;
     }
-    h1{
-        font-size: 28px;
+    .content{
+        margin-bottom: 0%;
     }
-    h3{
-        font-size: 15px;
+    .tab-content{
+        margin: 10px  5vw 0px  5vw;
+        
     }
-    .accordion{
-        width: 80%;
+    .tab-header{
+        margin-left: 4vw;
     }
-}
-@media(max-width:400px){
-    #countdown{
-        font-size: 14px;
-        width: 80%;
+    .tab-second-header{
+        margin-left:  5vw;
     }
-}
-@media(max-width:300px){
-    #countdown{
-        display: none;
+    
+    #about-us >p{
+        margin: 10px  5vw 0px  5vw;
     }
-    #logo{
-        width:35vh;
-        height: 30vh;
+    #about-us > h1{
+        margin-left: 4vw;
     }
-}
-
-
-@keyframes jumpy{
-    1%{
-        transform: translateY(-20%);
-        }
-    19%{
-        transform: translateY(0);
-        }
 }
